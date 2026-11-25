@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>JAG Cleaning Services Ltd. | Commercial &amp; Residential Cleaning in Alberta</title>
+<meta name="description" content="JAG Cleaning Services Ltd. provides Move-In & Move-Out, Carpet, Floor, and Post-Construction Cleaning Services across Brooks, Medicine Hat, Lethbridge, Calgary and Edmonton.">
+<meta name="theme-color" content="#0E1C3D">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="images/swoosh.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,100,500&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0E1C3D;
+  --navy-2:#16295A;
+  --red:#B42020;
+  --red-deep:#8E1515;
+  --blue:#0B4FBF;
+  --sky:#E4ECFA;
+  --paper:#F5F7FB;
+  --white:#FFFFFF;
+  --line:#D3DCEC;
+  --muted:#53607D;
+  --sans:"Archivo", "Helvetica Neue", Arial, sans-serif;
+  --serif:"Newsreader", Georgia, "Times New Roman", serif;
+  --wrap:1240px;
+  --gut:clamp(20px,4vw,48px);
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 96px)}
+body{margin:0;background:var(--paper);color:var(--navy);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gut)}
+h1,h2,h3{margin:0;font-weight:800;line-height:1.02;letter-spacing:-.02em}
+h2{font-size:clamp(34px,4.6vw,60px);font-stretch:112%}
+p{margin:0 0 1em}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 26px;border-radius:999px;font-weight:700;font-size:16px;text-decoration:none;border:2px solid transparent;transition:background .2s,color .2s,border-color .2s,transform .2s;cursor:pointer;font-family:inherit}
+.btn:active{transform:translateY(1px)}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-deep)}
+.btn-line{border-color:currentColor;color:var(--navy);background:transparent}
+.btn-line:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+.btn svg{width:18px;height:18px}
+
+/* ---------- utility bar ---------- */
+.util{background:var(--navy);color:#C9D4EC;font-size:13px}
+.util .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:42px}
+.util-phones{display:flex;gap:16px;overflow-x:auto;scrollbar-width:none;white-space:nowrap}
+.util-phones::-webkit-scrollbar{display:none}
+.util a{text-decoration:none}
+.util a:hover{color:#fff}
+.util-phones b{color:#fff;font-weight:600;margin-left:5px}
+.util-mail{display:flex;gap:8px;align-items:center;white-space:nowrap;color:#fff}
+.util-mail svg{width:15px;height:15px}
+
+/* ---------- header ---------- */
+.hdr{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:#fff}
+.hdr .wrap{display:flex;align-items:center;gap:18px;min-height:84px}
+.hdr-cta .btn{white-space:nowrap;padding:14px 22px}
+.brand img{width:178px;height:auto}
+.nav{display:flex;gap:2px;margin-left:auto;align-items:center}
+.nav > li{position:relative;list-style:none}
+.nav > li > a{display:flex;align-items:center;gap:4px;padding:10px 9px;font-size:14.5px;white-space:nowrap;font-weight:600;text-decoration:none;border-radius:8px}
+.nav > li > a:hover,.nav > li:focus-within > a{color:var(--blue)}
+.nav > li > a.is-current{color:var(--red)}
+.nav .caret{width:10px;height:10px;transition:transform .2s}
+.nav > li:hover .caret,.nav > li:focus-within .caret{transform:rotate(180deg)}
+.drop{position:absolute;top:100%;left:-8px;min-width:270px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px;margin:0;list-style:none;box-shadow:0 24px 50px -20px rgba(14,28,61,.35);opacity:0;visibility:hidden;transform:translateY(6px);transition:opacity .18s,transform .18s,visibility .18s}
+.nav > li:hover .drop,.nav > li:focus-within .drop{opacity:1;visibility:visible;transform:none}
+.drop a{display:block;padding:9px 12px;border-radius:8px;text-decoration:none;font-size:14.5px;font-weight:500}
+.drop a:hover{background:var(--sky);color:var(--blue)}
+.drop-wide{width:620px;display:grid;grid-template-columns:1.25fr 1fr;gap:6px}
+.drop-wide .grp{padding:6px 4px}
+.drop-wide .grp-title{display:block;font-weight:700;font-size:14.5px;padding:8px 12px 6px;color:var(--red);text-decoration:none}
+.drop-wide .grp ul{list-style:none;margin:0;padding:0}
+.drop-wide .grp li a{font-size:13.5px;padding:6px 12px}
+.hdr-cta{display:flex;align-items:center;gap:14px}
+.burger{display:none;width:46px;height:46px;border-radius:12px;border:1px solid var(--line);background:#fff;align-items:center;justify-content:center;cursor:pointer;margin-left:auto}
+.burger span{display:block;width:20px;height:2px;background:var(--navy);position:relative}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:20px;height:2px;background:var(--navy)}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+
+/* mobile drawer */
+.drawer{position:fixed;inset:0;z-index:80;background:var(--navy);color:#fff;padding:calc(env(safe-area-inset-top,0px) + 20px) 24px calc(env(safe-area-inset-bottom,0px) + 24px);overflow-y:auto;transform:translateX(100%);transition:transform .35s cubic-bezier(.6,.05,.3,1)}
+.drawer.open{transform:none}
+.drawer-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px}
+.drawer-top img{width:150px}
+.drawer-close{width:46px;height:46px;border-radius:12px;border:1px solid rgba(255,255,255,.25);background:transparent;color:#fff;font-size:26px;cursor:pointer}
+.drawer details{border-bottom:1px solid rgba(255,255,255,.12)}
+.drawer summary,.drawer > nav > a{display:block;padding:16px 0;font-size:20px;font-weight:700;text-decoration:none;cursor:pointer;list-style:none;border-bottom:1px solid rgba(255,255,255,.12)}
+.drawer details summary{border-bottom:0}
+.drawer summary::-webkit-details-marker{display:none}
+.drawer summary::after{content:"+";float:right;font-weight:400}
+.drawer details[open] summary::after{content:"\2013"}
+.drawer details a{display:block;padding:8px 0 8px 14px;color:#C9D4EC;text-decoration:none}
+.drawer .btn{margin-top:26px;width:100%;justify-content:center}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;background:
+  radial-gradient(1100px 520px at 85% -10%,var(--sky),transparent 60%),
+  linear-gradient(180deg,#fff 0%,var(--paper) 100%)}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(30px,5vw,72px);align-items:center;padding-top:clamp(40px,6vw,84px);padding-bottom:clamp(56px,7vw,100px)}
+.hero-swoosh{width:min(420px,70%);opacity:.95;margin-bottom:26px}
+.hero-welcome{font-size:18px;font-weight:600;color:var(--blue);margin-bottom:14px}
+.hero h1{font-size:clamp(44px,6.6vw,92px);font-stretch:118%;font-weight:850;letter-spacing:-.035em;line-height:.96}
+.hero h1 .ln{display:block}
+.hero-sub{max-width:560px;margin-top:26px;font-size:19px;color:var(--muted)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
+
+.branch-pick{margin-top:38px;max-width:560px;background:#fff;border:1px solid var(--line);border-radius:20px;padding:18px 20px 20px}
+.branch-pick legend{font-size:14px;font-weight:600;color:var(--muted);padding:0;margin-bottom:12px}
+.branch-pick fieldset{border:0;margin:0;padding:0;min-width:0}
+.city-chips{display:flex;flex-wrap:wrap;gap:8px}
+.city-chips label{position:relative}
+.city-chips input{position:absolute;opacity:0;pointer-events:none}
+.city-chips span{display:inline-block;padding:8px 14px;border-radius:999px;border:1px solid var(--line);font-size:14px;font-weight:600;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.city-chips input:checked + span{background:var(--navy);color:#fff;border-color:var(--navy)}
+.city-chips input:focus-visible + span{outline:3px solid var(--blue);outline-offset:2px}
+.branch-call{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:16px;padding-top:16px;border-top:1px dashed var(--line);flex-wrap:wrap}
+.branch-call a{font-size:clamp(26px,3vw,34px);font-weight:800;font-stretch:110%;text-decoration:none;color:var(--red);letter-spacing:-.01em}
+.branch-call small{display:block;font-size:13px;color:var(--muted);font-weight:500}
+
+/* the window + squeegee */
+.window{position:relative;justify-self:end;width:100%;max-width:470px}
+.pane{position:relative;aspect-ratio:4/5;border-radius:26px;overflow:hidden;background:var(--sky);box-shadow:0 0 0 10px #fff,0 0 0 11px var(--line),0 50px 80px -40px rgba(14,28,61,.55)}
+.pane img{width:100%;height:100%;object-fit:cover}
+.fog{position:absolute;inset:0;
+  background:
+   radial-gradient(circle at 22% 30%,rgba(255,255,255,.55) 0 3px,transparent 4px),
+   radial-gradient(circle at 70% 18%,rgba(255,255,255,.5) 0 2px,transparent 3px),
+   radial-gradient(circle at 48% 64%,rgba(255,255,255,.5) 0 4px,transparent 5px),
+   radial-gradient(circle at 82% 76%,rgba(255,255,255,.55) 0 3px,transparent 4px),
+   linear-gradient(160deg,rgba(214,222,236,.82),rgba(190,200,218,.78));
+  -webkit-backdrop-filter:blur(9px) grayscale(.7);backdrop-filter:blur(9px) grayscale(.7);
+  clip-path:inset(0 0 0 0);animation:wipe 1.9s cubic-bezier(.55,.05,.35,1) .6s forwards}
+.blade{position:absolute;top:-6%;bottom:-6%;left:-30px;width:16px;animation:blade 1.9s cubic-bezier(.55,.05,.35,1) .6s forwards;pointer-events:none}
+.blade::before{content:"";position:absolute;inset:0 4px 0 0;background:linear-gradient(90deg,#25324f,#0E1C3D);border-radius:4px}
+.blade::after{content:"";position:absolute;right:0;top:0;bottom:0;width:5px;background:var(--red);border-radius:0 3px 3px 0}
+.blade i{position:absolute;top:50%;right:14px;width:120px;height:14px;margin-top:-7px;border-radius:8px;background:linear-gradient(180deg,#3B5BA8,var(--blue))}
+@keyframes wipe{to{clip-path:inset(0 0 0 100%)}}
+@keyframes blade{0%{left:-30px;opacity:1}90%{opacity:1}100%{left:calc(100% + 8px);opacity:0}}
+.seal{position:absolute;left:-46px;bottom:-34px;width:150px;border-radius:50%;background:#fff;padding:6px;box-shadow:0 20px 40px -18px rgba(14,28,61,.5);animation:pop .6s cubic-bezier(.3,1.6,.5,1) 2.4s both}
+.seal img{border-radius:50%;mix-blend-mode:multiply}
+@keyframes pop{from{transform:scale(.4) rotate(-20deg);opacity:0}to{transform:none;opacity:1}}
+.bbb-chip{position:absolute;right:-18px;top:34px;background:#fff;border-radius:12px;padding:6px;box-shadow:0 18px 36px -18px rgba(14,28,61,.5);width:136px;animation:pop .6s cubic-bezier(.3,1.6,.5,1) 2.6s both}
+
+/* bubbles */
+.bubbles{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.bubbles b{position:absolute;bottom:-60px;border-radius:50%;border:1.5px solid rgba(11,79,191,.22);background:radial-gradient(circle at 32% 30%,rgba(255,255,255,.95) 0 14%,rgba(228,236,250,.35) 40%,transparent 70%);animation:rise linear infinite}
+@keyframes rise{to{transform:translate(var(--dx,20px),-110vh)}}
+
+/* ---------- marquee ---------- */
+.ticker{background:var(--blue);color:#fff;overflow:hidden;border-block:1px solid rgba(255,255,255,.15)}
+.ticker-track{display:flex;width:max-content;animation:tick 48s linear infinite}
+.ticker:hover .ticker-track{animation-play-state:paused}
+.ticker ul{display:flex;list-style:none;margin:0;padding:0}
+.ticker li{display:flex;align-items:center;gap:22px;padding:18px 0 18px 22px;font-weight:700;font-size:17px;font-stretch:108%;white-space:nowrap}
+.ticker li svg{width:16px;height:16px;color:#fff;opacity:.8}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* ---------- intro ---------- */
+.intro{padding:clamp(80px,10vw,130px) 0}
+.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,90px);align-items:start}
+.intro-left{position:sticky;top:130px}
+.intro h2 small{display:block;font-size:20px;font-stretch:100%;font-weight:600;color:var(--red);letter-spacing:0;margin-bottom:18px}
+.intro-copy{font-size:18px;color:#2A3756}
+.intro-copy strong{color:var(--navy)}
+.collage{position:relative;margin-top:44px;height:430px}
+.collage figure{position:absolute;margin:0;border-radius:22px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(14,28,61,.5)}
+.collage figure img{width:100%;height:100%;object-fit:cover}
+.collage .c1{left:0;top:0;width:62%;height:82%}
+.collage .c2{right:0;bottom:0;width:50%;height:62%;border:8px solid var(--paper)}
+
+.sheet{background:#fff;border:1px solid var(--line);border-radius:24px;padding:clamp(24px,3vw,38px);position:relative}
+.sheet::before{content:"";position:absolute;left:clamp(24px,3vw,38px);right:clamp(24px,3vw,38px);top:0;height:6px;background:linear-gradient(90deg,var(--red) 0 33%,var(--blue) 33% 100%);border-radius:0 0 6px 6px}
+.sheet h3{font-size:22px;font-stretch:108%;margin:10px 0 20px}
+.checks{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr;gap:0}
+.checks li{display:flex;align-items:center;gap:14px;padding:13px 0;border-bottom:1px solid #E8EDF6;font-weight:600}
+.checks li:last-child{border-bottom:0}
+.box{flex:0 0 26px;width:26px;height:26px;border-radius:8px;border:2px solid var(--line);display:grid;place-items:center;transition:background .3s,border-color .3s;transition-delay:calc(var(--i)*90ms)}
+.box svg{width:14px;height:14px;stroke:#fff;stroke-width:3.4;fill:none;stroke-dasharray:24;stroke-dashoffset:24;transition:stroke-dashoffset .35s ease;transition-delay:calc(var(--i)*90ms + 120ms)}
+.checks.in .box{background:var(--blue);border-color:var(--blue)}
+.checks.in .box svg{stroke-dashoffset:0}
+.sheet-foot{margin-top:22px;padding:18px 20px;background:var(--sky);border-radius:14px;font-size:15.5px}
+.sheet-foot strong{color:var(--red)}
+
+/* ---------- services index ---------- */
+.svc{background:var(--navy);color:#fff;padding:clamp(80px,10vw,130px) 0;position:relative;overflow:hidden}
+.svc::before{content:"";position:absolute;right:-180px;top:-120px;width:520px;height:520px;border-radius:50%;border:1px solid rgba(255,255,255,.08);box-shadow:0 0 0 70px rgba(255,255,255,.02),0 0 0 140px rgba(255,255,255,.015)}
+.svc-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(36px,6vw,90px);position:relative}
+.svc-side{position:sticky;top:120px;align-self:start}
+.svc-side p{color:#B8C5E2;font-size:18px;max-width:420px;margin-top:22px}
+.svc-photo{margin-top:34px;border-radius:22px;overflow:hidden;aspect-ratio:4/3;position:relative}
+.svc-photo img{width:100%;height:100%;object-fit:cover;transition:opacity .4s}
+.svc-groups{display:grid;gap:18px;align-content:start}
+.grp-card{border:1px solid rgba(255,255,255,.14);border-radius:22px;padding:26px 28px;background:rgba(255,255,255,.03)}
+.grp-card h3{font-size:clamp(24px,2.4vw,30px);font-stretch:112%;display:flex;justify-content:space-between;align-items:baseline;gap:20px}
+.grp-card h3 a{text-decoration:none}
+.grp-card h3 a:hover{color:#9CB8F2}
+.grp-card .count{font-size:14px;font-weight:600;color:#9CB8F2;font-stretch:100%;letter-spacing:0;white-space:nowrap}
+.sub{list-style:none;margin:18px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;column-gap:26px}
+.sub a{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:11px 0;border-top:1px solid rgba(255,255,255,.1);text-decoration:none;color:#D5DEF2;font-size:15.5px;transition:color .2s,padding .2s}
+.sub a:hover{color:#fff;padding-left:6px}
+.sub a svg{width:14px;height:14px;flex:0 0 14px;opacity:.5}
+.solo{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.solo a{display:block;border-radius:22px;padding:24px;text-decoration:none;min-height:150px;position:relative;transition:transform .25s}
+.solo a:hover{transform:translateY(-4px)}
+.solo a:nth-child(1){background:var(--red)}
+.solo a:nth-child(2){background:var(--blue)}
+.solo a:nth-child(3){background:#fff;color:var(--navy)}
+.solo h3{font-size:22px;font-stretch:110%;line-height:1.1}
+.solo span{position:absolute;left:24px;bottom:20px;font-size:14px;font-weight:600;opacity:.85}
+
+/* ---------- values + testimonials ---------- */
+.values{padding:clamp(80px,10vw,130px) 0}
+.values-head{max-width:760px;margin-bottom:clamp(40px,6vw,70px)}
+.vrow{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,90px);align-items:center;padding:clamp(30px,4vw,50px) 0}
+.vrow + .vrow{border-top:1px solid var(--line)}
+.vrow:nth-child(even) .vmedia{order:2}
+.vmedia{position:relative}
+.vmedia > img{border-radius:24px;aspect-ratio:553/531;object-fit:cover;width:100%;max-width:520px}
+.vrow:nth-child(even) .vmedia > img{margin-left:auto}
+.vtext h3{font-size:clamp(28px,3vw,40px);font-stretch:112%;margin-bottom:20px}
+.vtext > p{color:#2A3756;font-size:17.5px}
+.quote{margin:28px 0 0;background:#fff;border:1px solid var(--line);border-left:6px solid var(--red);border-radius:6px 20px 20px 6px;padding:24px 26px}
+.quote h4{margin:0 0 10px;font-size:16px;font-weight:700;color:var(--blue)}
+.quote blockquote{margin:0;font-family:var(--serif);font-style:italic;font-size:20px;line-height:1.5;color:var(--navy)}
+.quote cite{display:block;margin-top:14px;font-style:normal;font-weight:700;font-size:15px}
+.quote cite small{display:block;font-weight:500;color:var(--muted)}
+.quote.long blockquote{font-size:18px}
+.quote .more{display:none}
+.quote.open .more{display:inline}
+.quote .dots{display:inline}
+.quote.open .dots{display:none}
+.read-more{margin-top:10px;background:none;border:0;padding:0;font:inherit;font-weight:700;font-size:14.5px;color:var(--red);cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+
+/* ---------- coupons ---------- */
+.deals{background:linear-gradient(180deg,var(--paper),var(--sky));padding:clamp(80px,10vw,120px) 0}
+.deals-head{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;margin-bottom:46px}
+.deals-head h2{max-width:720px}
+.deals-head p{max-width:340px;color:var(--muted);margin:0}
+.coupons{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.coupon{position:relative;display:grid;grid-template-columns:auto 1fr;border-radius:22px;overflow:hidden;color:#fff;min-height:200px;transition:transform .3s cubic-bezier(.3,1.4,.5,1)}
+.coupon:hover{transform:rotate(-1.2deg) translateY(-4px)}
+.coupon.c-res{background:var(--blue)}
+.coupon.c-sen{background:var(--navy)}
+.coupon.c-com{background:var(--red)}
+.coupon .pct{display:flex;align-items:center;padding:24px 22px 24px 26px;border-right:2px dashed rgba(255,255,255,.45);position:relative}
+.coupon .pct::before,.coupon .pct::after{content:"";position:absolute;right:-13px;width:24px;height:24px;border-radius:50%;background:var(--sky)}
+.coupon .pct::before{top:-12px}.coupon .pct::after{bottom:-12px}
+.coupon .pct strong{font-size:78px;font-weight:900;font-stretch:72%;line-height:.85;letter-spacing:-.02em}
+.coupon .pct strong sup{font-size:.42em;vertical-align:top;position:relative;top:.18em}
+.coupon .pct strong em{display:block;font-style:normal;font-size:24px;font-stretch:100%;letter-spacing:.02em;margin-top:6px}
+.coupon .info{padding:24px 24px 22px;display:flex;flex-direction:column;justify-content:space-between;gap:14px}
+.coupon .info h3{font-size:22px;font-stretch:110%;line-height:1.1}
+.coupon .info p{font-size:14px;margin:0;opacity:.85}
+.coupon .info img{width:120px;opacity:.9}
+
+/* ---------- guide + form ---------- */
+.guide{padding:clamp(80px,10vw,120px) 0;background:#fff}
+.guide-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,80px);align-items:center}
+.book{position:relative;width:min(320px,76%);aspect-ratio:3/4;margin:38px 0 56px 30px;perspective:1200px}
+.book-cover{position:absolute;inset:0;border-radius:6px 16px 16px 6px;background:var(--navy);color:#fff;padding:30px 26px;display:flex;flex-direction:column;justify-content:space-between;transform:rotateY(-14deg);transform-origin:left;box-shadow:24px 30px 50px -20px rgba(14,28,61,.5),inset 10px 0 0 rgba(255,255,255,.08);overflow:hidden}
+.book-cover::after{content:"";position:absolute;right:-60px;bottom:-60px;width:220px;height:220px;border-radius:50%;background:var(--red);opacity:.9}
+.book-cover img{width:150px;position:relative}
+.book-cover h3{font-size:27px;font-stretch:112%;line-height:1.08;position:relative;z-index:1}
+.book-cover small{position:relative;z-index:1;font-size:13px;opacity:.8}
+.guide-copy p{color:#2A3756;font-size:17.5px;max-width:560px}
+.form{background:var(--paper);border:1px solid var(--line);border-radius:26px;padding:clamp(24px,3.4vw,40px)}
+.form h3{font-size:28px;font-stretch:112%;margin-bottom:6px}
+.form > p{color:var(--muted);margin-bottom:22px;font-size:15.5px}
+.field{margin-bottom:14px}
+.field label{display:block;font-size:14px;font-weight:600;margin-bottom:6px}
+.field label span{color:var(--red)}
+.field input,.field textarea{width:100%;font:inherit;font-size:16px;padding:14px 16px;border-radius:12px;border:1.5px solid var(--line);background:#fff;color:var(--navy);transition:border-color .2s,box-shadow .2s}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 4px rgba(11,79,191,.14)}
+.field textarea{min-height:110px;resize:vertical}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form .btn{width:100%;justify-content:center;margin-top:6px}
+
+/* ---------- areas ---------- */
+.areas{padding:clamp(80px,10vw,130px) 0;background:var(--paper)}
+.areas-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:clamp(30px,6vw,90px);align-items:center}
+.map{max-width:360px;margin:0 auto;width:100%}
+.map svg{width:100%;height:auto;overflow:visible;-webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 42%);mask-image:linear-gradient(180deg,transparent 0%,#000 42%)}
+.map .prov{fill:#fff;stroke:var(--navy);stroke-width:2.2;stroke-linejoin:round}
+.map .grid line{stroke:var(--sky);stroke-width:1}
+.map .dot{fill:var(--red)}
+.map .ring{fill:none;stroke:var(--red);stroke-width:2;transform-box:fill-box;transform-origin:center;animation:ping 2.6s ease-out infinite}
+.map text{font-family:var(--sans);font-size:15px;font-weight:700;fill:var(--navy);paint-order:stroke;stroke:var(--paper);stroke-width:5px;stroke-linejoin:round}
+.map .dot-g{cursor:pointer}
+.map .dot-g.hot .dot{fill:var(--blue)}
+@keyframes ping{0%{transform:scale(.6);opacity:.9}100%{transform:scale(2.4);opacity:0}}
+.areas-copy > p{color:var(--muted);font-size:18px;max-width:620px;margin-top:18px}
+.branches{list-style:none;margin:34px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.branches li{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px 22px;transition:border-color .2s,box-shadow .2s}
+.branches li.hot{border-color:var(--blue);box-shadow:0 0 0 3px rgba(11,79,191,.12)}
+.branches h3{font-size:19px;font-stretch:108%;margin-bottom:6px}
+.branches h3 a{text-decoration:none}
+.branches h3 a:hover{color:var(--blue)}
+.branches address{font-style:normal;font-size:14.5px;color:var(--muted);margin-bottom:10px;line-height:1.5}
+.branches .tel{font-weight:800;color:var(--red);text-decoration:none;font-size:18px}
+.branches li:last-child{grid-column:1/-1}
+.branches .tel small{font-weight:500;color:var(--muted);font-size:12.5px;margin-left:6px}
+
+/* ---------- recognition ---------- */
+.trust{padding:clamp(60px,8vw,90px) 0;background:#fff;border-block:1px solid var(--line)}
+.trust .wrap{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center}
+.trust h2{font-size:clamp(28px,3.2vw,42px)}
+.trust p{color:var(--muted);margin:14px 0 0;max-width:520px}
+.badges{display:flex;gap:22px;align-items:center}
+.badges img{height:130px;width:auto;border-radius:12px;mix-blend-mode:multiply}
+.badges .cert{border:1px solid var(--line);border-radius:12px}
+
+/* ---------- newsletter ---------- */
+.news{position:relative;color:#fff;padding:clamp(80px,10vw,120px) 0;background:var(--red-deep) url("images/newsletter-bg.jpg") center/cover no-repeat;isolation:isolate}
+.news::before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(142,21,21,.96) 30%,rgba(180,32,32,.7));z-index:-1}
+.news .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.news p{font-size:18px;opacity:.92;max-width:620px;margin-top:18px}
+.news .btn{background:#fff;color:var(--red);justify-self:start}
+.news .btn:hover{background:var(--navy);color:#fff}
+
+/* ---------- footer ---------- */
+.foot{background:var(--navy);color:#B8C5E2;padding:clamp(70px,8vw,100px) 0 0;font-size:15px}
+.foot-top{display:grid;grid-template-columns:1.2fr .8fr 1fr 1.3fr;gap:40px}
+.foot-brand img{width:210px;margin-bottom:22px}
+.foot-brand p{max-width:300px}
+.foot h4{color:#fff;font-size:16px;margin:0 0 18px;font-weight:700}
+.foot ul{list-style:none;margin:0;padding:0}
+.foot li{margin-bottom:9px}
+.foot a{text-decoration:none}
+.foot a:hover{color:#fff}
+.social{display:flex;gap:10px;margin-top:22px}
+.social a{width:44px;height:44px;border-radius:12px;border:1px solid rgba(255,255,255,.2);display:grid;place-items:center;transition:background .2s}
+.social a:hover{background:var(--blue);border-color:var(--blue)}
+.social svg{width:18px;height:18px;fill:#fff}
+.foot-phones li{display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid rgba(255,255,255,.08);padding-bottom:9px}
+.foot-phones b{color:#fff;font-weight:700;white-space:nowrap}
+.foot-mail{margin-top:16px}
+.foot-mail a{display:block;color:#fff;margin-bottom:4px}
+.foot-bbb{margin-top:22px;width:140px;border-radius:10px}
+.foot-swoosh{margin:60px auto 0;width:min(520px,80%);opacity:.18}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:30px;padding:24px 0 calc(24px + env(safe-area-inset-bottom,0px));display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:14px}
+.foot-bottom a{color:#fff;font-weight:600}
+
+/* mobile action bar */
+.mbar{display:none}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
+.rv.in{opacity:1;transform:none}
+
+@media (max-width:1180px){
+  .nav,.hdr-cta .btn{display:none}
+  .burger{display:inline-flex}
+  .foot-top{grid-template-columns:1fr 1fr}
+}
+@media (max-width:920px){
+  .hero .wrap,.intro-grid,.svc-grid,.vrow,.guide-grid,.areas-grid,.news .wrap,.trust .wrap{grid-template-columns:1fr}
+  .window{justify-self:center;margin:30px 0 40px}
+  .svc-side{position:static}
+  .vrow:nth-child(even) .vmedia{order:0}
+  .coupons{grid-template-columns:1fr}
+  .badges{flex-wrap:wrap}
+  .map{max-width:280px}
+}
+@media (max-width:640px){
+  body{font-size:16px;padding-bottom:72px}
+  .util-mail{display:none}
+  .hdr .wrap{min-height:70px}
+  .brand img{width:148px}
+  .sub,.solo,.branches,.row2{grid-template-columns:1fr}
+  .seal{width:112px;left:-12px;bottom:-28px}
+  .bbb-chip{right:-6px;width:110px}
+  .collage{height:330px}
+  .foot-top{grid-template-columns:1fr}
+  .badges img{height:96px}
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:70;padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));background:#fff;border-top:1px solid var(--line)}
+  .mbar a{display:flex;justify-content:center;align-items:center;gap:8px;padding:13px;border-radius:999px;font-weight:700;text-decoration:none}
+  .mbar a:first-child{background:var(--navy);color:#fff}
+  .mbar a:last-child{background:var(--red);color:#fff}
+  .mbar svg{width:17px;height:17px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .fog,.blade{display:none}
+  .rv{opacity:1;transform:none}
+  .checks .box{background:var(--blue);border-color:var(--blue)}
+  .checks .box svg{stroke-dashoffset:0}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12c0 1.1.9 2 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path fill="currentColor" d="M12 1.5l2.2 7.3 7.3 2.2-7.3 2.2L12 20.5l-2.2-7.3L2.5 11l7.3-2.2z"/></symbol>
+  <symbol id="i-caret" viewBox="0 0 12 12"><path fill="none" stroke="currentColor" stroke-width="2" d="M2 4l4 4 4-4"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 16 16"><path fill="none" stroke="currentColor" stroke-width="2" d="M4 12L12 4M6 4h6v6"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l3 6.6 7.2.7-5.4 4.8 1.6 7.1L12 17.6 5.6 21.2l1.6-7.1L1.8 9.3 9 8.6z"/></symbol>
+</svg>
+
+<!-- utility bar -->
+<div class="util">
+  <div class="wrap">
+    <div class="util-phones" aria-label="Branch phone numbers">
+      <a href="tel:403-363-9932">Calgary, Airdrie &amp; Strathmore<b>403-363-9932</b></a>
+      <a href="tel:403-363-9932">Brooks<b>403-363-9932</b></a>
+      <a href="tel:403-528-1041">Medicine Hat<b>403-528-1041</b></a>
+      <a href="tel:403-360-7116">Lethbridge<b>403-360-7116</b></a>
+      <a href="tel:780-953-9932">Edmonton<b>780-953-9932</b></a>
+    </div>
+    <a class="util-mail" href="mailto:info@jagcleaningservices.ca"><svg><use href="#i-mail"/></svg>info@jagcleaningservices.ca</a>
+  </div>
+</div>
+
+<!-- header -->
+<header class="hdr">
+  <div class="wrap">
+    <a class="brand" href="https://www.jagcleaningservices.ca/" aria-label="JAG Cleaning Services Ltd. home"><img src="images/logo.png" alt="JAG Cleaning Services Ltd." width="178" height="56"></a>
+    <ul class="nav">
+      <li><a href="https://www.jagcleaningservices.ca/" class="is-current">Home</a></li>
+      <li><a href="https://www.jagcleaningservices.ca/pages/about-cleaning-company-brooks-medicine-hat">About Us</a></li>
+      <li>
+        <a href="https://www.jagcleaningservices.ca/pages/services">Services <svg class="caret"><use href="#i-caret"/></svg></a>
+        <div class="drop drop-wide">
+          <div class="grp">
+            <a class="grp-title" href="https://www.jagcleaningservices.ca/pages/services/janitorial-services">Janitorial Services</a>
+            <ul>
+              <li><a href="https://www.jagcleaningservices.ca/pages/services/janitorial-services/camp-gym-fitness-cleaning-services-brooks-medicine-hat-ab">Camp, Gym and Fitness Cleaning</a></li>
+              <li><a href="https://www.jagcleaningservices.ca/pages/services/janitorial-services/commercial-carpet-cleaning-services-brooks-medicine-hat-ab">Commercial Carpet Cleaning</a></li>
+              <li><a href="https://www.jagcleaningservices.ca/pages/services/janitorial-services/deep-restroom-kitchen-cleaning-services-brooks-medicine-hat-ab">Deep Restroom and Kitchen Cleaning</a></li>
+              <li><a href="https://www.jagcleaningservices.ca/pages/services/janitorial-services/dusting-sweeping-services-brooks-medicine-hat-ab">Dusting and Sweeping</a></li>
+              <li><a href="https://www.jagcleaningservices.ca/pages/services/janitorial-services/floor-scrubbing-stripping-waxing-polishing-brooks-medicine-hat-ab">Floor Scrubbing, Stripping, Waxing &amp; Polishing</a></li>
+              <li><a href="https://www.jagcleaningservices.ca/pages/services/janitorial-services/housekeeping-services-brooks-medicine-hat-ab">Housekeeping Services</a></li>
+            </ul>
+          </div>
+          <div class="grp">
+            <ul style="margin-top:34px">
+              <li><a href="https://www.jagcleaningservices.ca/pages/services/janitorial-services/move-in-move-out-cleaning-services-brooks-medicine-hat-ab">Move-In and Move-Out Cleaning</a></li>
+              <li><a href="https://www.jagcleaningservices.ca/pages/services/janitorial-services/post-construction-cleaning-services-brooks-medicine-hat-ab">Post-Construction Cleaning</a></li>
+              <li><a href="https://www.jagcleaningservices.ca/pages/services/janitorial-services/post-disaster-recovery-services-brooks-medicine-hat-ab">Post-Disaster Recovery</a></li>
+              <li><a href="https://www.jagcleaningservices.ca/pages/services/janitorial-services/special-event-cleaning-services-brooks-medicine-hat-ab">Special Event Cleaning</a></li>
+              <li><a href="https://www.jagcleaningservices.ca/pages/services/janitorial-services/wall-washing-cleaning-services-brooks-medicine-hat-ab">Wall Washing and Cleaning</a></li>
+              <li><a href="https://www.jagcleaningservices.ca/pages/services/janitorial-services/window-cleaning-services-brooks-medicine-hat-ab">Window Cleaning</a></li>
+            </ul>
+            <a class="grp-title" href="https://www.jagcleaningservices.ca/pages/services/auto-cleaning-detailing-services-brooks-medicine-hat-ab">Auto Cleaning &amp; Detailing</a>
+            <a class="grp-title" href="https://www.jagcleaningservices.ca/pages/services/residential-cleaning">Residential Cleaning</a>
+            <a class="grp-title" href="https://www.jagcleaningservices.ca/pages/services/commercial-cleaning">Commercial Cleaning</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="https://www.jagcleaningservices.ca/pages/service-areas">Service Areas <svg class="caret"><use href="#i-caret"/></svg></a>
+        <ul class="drop">
+          <li><a href="https://www.jagcleaningservices.ca/pages/service-areas/commercial-residential-cleaning-services-brooks-ab">Brooks</a></li>
+          <li><a href="https://www.jagcleaningservices.ca/pages/service-areas/commercial-residential-cleaning-services-medicine-hat-ab">Medicine Hat</a></li>
+          <li><a href="https://www.jagcleaningservices.ca/pages/service-areas/commercial-residential-cleaning-services-lethbridge-ab">Lethbridge</a></li>
+          <li><a href="https://www.jagcleaningservices.ca/pages/service-areas/commercial-residential-cleaning-services-edmonton">Edmonton</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="https://www.jagcleaningservices.ca/pages/gallery">Gallery <svg class="caret"><use href="#i-caret"/></svg></a>
+        <ul class="drop">
+          <li><a href="https://www.jagcleaningservices.ca/pages/gallery/before-we-clean">Before We Clean</a></li>
+          <li><a href="https://www.jagcleaningservices.ca/pages/gallery/after-we-clean">After We Clean</a></li>
+          <li><a href="https://www.jagcleaningservices.ca/pages/gallery/equipment-and-vehicles">Equipment &amp; Vehicles</a></li>
+        </ul>
+      </li>
+      <li><a href="https://www.jagcleaningservices.ca/pages/brooks-medicine-hat-cleaning-company-testimonials">Testimonials</a></li>
+      <li><a href="https://www.jagcleaningservices.ca/blogs/cleaning-company-blog">Blog</a></li>
+      <li><a href="https://www.jagcleaningservices.ca/pages/brooks-medicine-hat-residential-commercial-cleaning-company">Contact Us</a></li>
+    </ul>
+    <div class="hdr-cta">
+      <a class="btn btn-red" href="https://www.jagcleaningservices.ca/pages/brooks-medicine-hat-residential-commercial-cleaning-company">Get in touch</a>
+    </div>
+    <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><span></span></button>
+  </div>
+</header>
+
+<!-- mobile drawer -->
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-top">
+    <img src="images/logo-white.png" alt="JAG Cleaning Services Ltd.">
+    <button class="drawer-close" aria-label="Close menu">&times;</button>
+  </div>
+  <nav>
+    <a href="https://www.jagcleaningservices.ca/">Home</a>
+    <a href="https://www.jagcleaningservices.ca/pages/about-cleaning-company-brooks-medicine-hat">About Us</a>
+    <details>
+      <summary>Services</summary>
+      <a href="https://www.jagcleaningservices.ca/pages/services/janitorial-services">Janitorial Services</a>
+      <a href="https://www.jagcleaningservices.ca/pages/services/auto-cleaning-detailing-services-brooks-medicine-hat-ab">Auto Cleaning and Detailing</a>
+      <a href="https://www.jagcleaningservices.ca/pages/services/residential-cleaning">Residential Cleaning</a>
+      <a href="https://www.jagcleaningservices.ca/pages/services/commercial-cleaning">Commercial Cleaning</a>
+      <a href="https://www.jagcleaningservices.ca/pages/services">All services</a>
+    </details>
+    <details>
+      <summary>Service Areas</summary>
+      <a href="https://www.jagcleaningservices.ca/pages/service-areas/commercial-residential-cleaning-services-brooks-ab">Brooks</a>
+      <a href="https://www.jagcleaningservices.ca/pages/service-areas/commercial-residential-cleaning-services-medicine-hat-ab">Medicine Hat</a>
+      <a href="https://www.jagcleaningservices.ca/pages/service-areas/commercial-residential-cleaning-services-lethbridge-ab">Lethbridge</a>
+      <a href="https://www.jagcleaningservices.ca/pages/service-areas/commercial-residential-cleaning-services-edmonton">Edmonton</a>
+    </details>
+    <details>
+      <summary>Gallery</summary>
+      <a href="https://www.jagcleaningservices.ca/pages/gallery/before-we-clean">Before We Clean</a>
+      <a href="https://www.jagcleaningservices.ca/pages/gallery/after-we-clean">After We Clean</a>
+      <a href="https://www.jagcleaningservices.ca/pages/gallery/equipment-and-vehicles">Equipment &amp; Vehicles</a>
+    </details>
+    <a href="https://www.jagcleaningservices.ca/pages/brooks-medicine-hat-cleaning-company-testimonials">Testimonials</a>
+    <a href="https://www.jagcleaningservices.ca/blogs/cleaning-company-blog">Blog</a>
+    <a href="https://www.jagcleaningservices.ca/pages/brooks-medicine-hat-residential-commercial-cleaning-company">Contact Us</a>
+  </nav>
+  <a class="btn btn-red" href="https://www.jagcleaningservices.ca/pages/brooks-medicine-hat-residential-commercial-cleaning-company">Get in touch</a>
+</div>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="bubbles" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="hero-copy">
+      <img class="hero-swoosh" src="images/swoosh.png" alt="" aria-hidden="true">
+      <p class="hero-welcome">Welcome to JAG Cleaning Services</p>
+      <h1><span class="ln">Your expert</span><span class="ln">cleaning solution</span><span class="ln">in Alberta.</span></h1>
+      <p class="hero-sub">Transforming spaces, simplifying lives. Your comprehensive cleaning company for residential, commercial, custodial and janitorial services.</p>
+      <div class="hero-actions">
+        <a class="btn btn-red" href="https://www.jagcleaningservices.ca/pages/brooks-medicine-hat-residential-commercial-cleaning-company">Get in touch</a>
+        <a class="btn btn-line" href="#services">View our services</a>
+      </div>
+
+      <form class="branch-pick" onsubmit="return false">
+        <fieldset>
+          <legend>Call or text your local branch</legend>
+          <div class="city-chips">
+            <label><input type="radio" name="city" value="403-363-9932|Calgary, Airdrie & Strathmore" checked><span>Calgary</span></label>
+            <label><input type="radio" name="city" value="403-363-9932|Brooks"><span>Brooks</span></label>
+            <label><input type="radio" name="city" value="403-528-1041|Medicine Hat"><span>Medicine Hat</span></label>
+            <label><input type="radio" name="city" value="403-360-7116|Lethbridge"><span>Lethbridge</span></label>
+            <label><input type="radio" name="city" value="780-953-9932|Edmonton"><span>Edmonton</span></label>
+          </div>
+          <div class="branch-call">
+            <div>
+              <small id="branchName">Calgary, Airdrie &amp; Strathmore branch</small>
+              <a id="branchTel" href="tel:403-363-9932">403-363-9932</a>
+            </div>
+            <a class="btn btn-line" id="branchBtn" href="tel:403-363-9932" style="font-size:15px;padding:12px 20px;color:var(--navy)"><svg><use href="#i-phone"/></svg>Call now</a>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+
+    <div class="window">
+      <div class="pane">
+        <img src="images/hero-cleaner.jpg" alt="JAG cleaner holding cleaning supplies and giving a thumbs up" width="553" height="531">
+        <div class="fog" aria-hidden="true"></div>
+      </div>
+      <div class="blade" aria-hidden="true"><i></i></div>
+      <div class="seal"><img src="images/cbrb-seal.jpg" alt="JAG Cleaning Services Ltd. 2023 CBRB Verified, Best Businesses in Canada, Alberta"></div>
+      <div class="bbb-chip"><img src="images/bbb-accredited.jpg" alt="BBB Accredited Business, BBB Rating A+"></div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker" aria-label="Our specialized services">
+  <div class="ticker-track">
+    <ul>
+      <li>Move-In &amp; Move-Out Cleaning<svg><use href="#i-spark"/></svg></li>
+      <li>Carpet &amp; Upholstery Cleaning<svg><use href="#i-spark"/></svg></li>
+      <li>Biohazard Cleanup<svg><use href="#i-spark"/></svg></li>
+      <li>Junk Removal &amp; Property Cleanouts<svg><use href="#i-spark"/></svg></li>
+      <li>Floor Care &amp; Maintenance<svg><use href="#i-spark"/></svg></li>
+      <li>Post-Construction Cleaning<svg><use href="#i-spark"/></svg></li>
+      <li>Commercial Janitorial Services<svg><use href="#i-spark"/></svg></li>
+      <li>Office &amp; Building Cleaning<svg><use href="#i-spark"/></svg></li>
+      <li>Interior &amp; Exterior Window Cleaning<svg><use href="#i-spark"/></svg></li>
+      <li>Special Event Cleaning<svg><use href="#i-spark"/></svg></li>
+    </ul>
+    <ul aria-hidden="true">
+      <li>Move-In &amp; Move-Out Cleaning<svg><use href="#i-spark"/></svg></li>
+      <li>Carpet &amp; Upholstery Cleaning<svg><use href="#i-spark"/></svg></li>
+      <li>Biohazard Cleanup<svg><use href="#i-spark"/></svg></li>
+      <li>Junk Removal &amp; Property Cleanouts<svg><use href="#i-spark"/></svg></li>
+      <li>Floor Care &amp; Maintenance<svg><use href="#i-spark"/></svg></li>
+      <li>Post-Construction Cleaning<svg><use href="#i-spark"/></svg></li>
+      <li>Commercial Janitorial Services<svg><use href="#i-spark"/></svg></li>
+      <li>Office &amp; Building Cleaning<svg><use href="#i-spark"/></svg></li>
+      <li>Interior &amp; Exterior Window Cleaning<svg><use href="#i-spark"/></svg></li>
+      <li>Special Event Cleaning<svg><use href="#i-spark"/></svg></li>
+    </ul>
+  </div>
+</div>
+
+<!-- INTRO -->
+<section class="intro" id="about">
+  <div class="wrap intro-grid">
+    <div class="intro-left">
+      <h2 class="rv"><small>JAG Cleaning Services Ltd.</small>Professional commercial &amp; residential cleaning across Alberta.</h2>
+      <div class="collage rv">
+        <figure class="c1"><img src="images/office-cleaning.jpg" alt="Two JAG cleaners mopping and wiping an office" loading="lazy"></figure>
+        <figure class="c2"><img src="images/floor-care.jpg" alt="JAG cleaner wiping a living room floor" loading="lazy"></figure>
+      </div>
+    </div>
+    <div>
+      <div class="intro-copy rv">
+        <p><strong>JAG Cleaning Services Ltd. is a trusted</strong> cleaning service provider dedicated to delivering high-quality, reliable, and professional cleaning solutions tailored to meet the needs of residential, commercial, and industrial clients.</p>
+        <p>We take pride in maintaining the highest standards of cleanliness, professionalism, and customer satisfaction. Our goal is to provide exceptional service through our commitment to quality workmanship, dependable service, and attention to detail.</p>
+      </div>
+      <div class="sheet rv">
+        <h3>Our specialized cleaning services include</h3>
+        <ul class="checks">
+          <li style="--i:0"><span class="box"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>Move-In &amp; Move-Out Cleaning</li>
+          <li style="--i:1"><span class="box"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>Carpet &amp; Upholstery Cleaning</li>
+          <li style="--i:2"><span class="box"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>Biohazard Cleanup</li>
+          <li style="--i:3"><span class="box"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>Junk Removal &amp; Property Cleanouts</li>
+          <li style="--i:4"><span class="box"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>Floor Care &amp; Maintenance</li>
+          <li style="--i:5"><span class="box"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>Post-Construction Cleaning</li>
+          <li style="--i:6"><span class="box"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>Commercial Janitorial Services</li>
+          <li style="--i:7"><span class="box"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>Office &amp; Building Cleaning</li>
+          <li style="--i:8"><span class="box"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>Interior &amp; Exterior Window Cleaning</li>
+          <li style="--i:9"><span class="box"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>Special Event Cleaning</li>
+          <li style="--i:10"><span class="box"><svg viewBox="0 0 16 16"><path d="M3 8.5l3.2 3L13 4.5"/></svg></span>Customized Residential &amp; Commercial Cleaning Solutions</li>
+        </ul>
+        <p class="sheet-foot">Whether you require ongoing cleaning and maintenance or a one-time specialized cleaning service, our team is ready to deliver professional results you can count on. <strong>At JAG Cleaning Services Ltd., your property is our priority, and your satisfaction is our commitment.</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="svc" id="services">
+  <div class="wrap svc-grid">
+    <div class="svc-side">
+      <h2 class="rv">Residential, commercial, custodial and janitorial.</h2>
+      <p class="rv">Trust your cleaning needs to our team of professional and certified technicians, well-equipped to handle all aspects of your cleaning project.</p>
+      <div class="svc-photo rv"><img id="svcImg" src="images/service-janitorial.jpg" alt="JAG cleaners at work in an office" loading="lazy"></div>
+    </div>
+    <div class="svc-groups">
+      <div class="grp-card rv" data-img="images/service-janitorial.jpg">
+        <h3><a href="https://www.jagcleaningservices.ca/pages/services/janitorial-services">Janitorial Services</a><span class="count">12 services</span></h3>
+        <ul class="sub">
+          <li><a href="https://www.jagcleaningservices.ca/pages/services/janitorial-services/camp-gym-fitness-cleaning-services-brooks-medicine-hat-ab">Camp, Gym and Fitness Cleaning<svg><use href="#i-arrow"/></svg></a></li>
+          <li><a href="https://www.jagcleaningservices.ca/pages/services/janitorial-services/commercial-carpet-cleaning-services-brooks-medicine-hat-ab">Commercial Carpet Cleaning<svg><use href="#i-arrow"/></svg></a></li>
+          <li><a href="https://www.jagcleaningservices.ca/pages/services/janitorial-services/deep-restroom-kitchen-cleaning-services-brooks-medicine-hat-ab">Deep Restroom and Kitchen Cleaning<svg><use href="#i-arrow"/></svg></a></li>
+          <li><a href="https://www.jagcleaningservices.ca/pages/services/janitorial-services/dusting-sweeping-services-brooks-medicine-hat-ab">Dusting and Sweeping<svg><use href="#i-arrow"/></svg></a></li>
+          <li><a href="https://www.jagcleaningservices.ca/pages/services/janitorial-services/floor-scrubbing-stripping-waxing-polishing-brooks-medicine-hat-ab">Floor Scrubbing, Stripping, Waxing, and Polishing<svg><use href="#i-arrow"/></svg></a></li>
+          <li><a href="https://www.jagcleaningservices.ca/pages/services/janitorial-services/housekeeping-services-brooks-medicine-hat-ab">Housekeeping Services<svg><use href="#i-arrow"/></svg></a></li>
+          <li><a href="https://www.jagcleaningservices.ca/pages/services/janitorial-services/move-in-move-out-cleaning-services-brooks-medicine-hat-ab">Move-In and Move-Out Cleaning<svg><use href="#i-arrow"/></svg></a></li>
+          <li><a href="https://www.jagcleaningservices.ca/pages/services/janitorial-services/post-construction-cleaning-services-brooks-medicine-hat-ab">Post-Construction Cleaning<svg><use href="#i-arrow"/></svg></a></li>
+          <li><a href="https://www.jagcleaningservices.ca/pages/services/janitorial-services/post-disaster-recovery-services-brooks-medicine-hat-ab">Post-Disaster Recovery<svg><use href="#i-arrow"/></svg></a></li>
+          <li><a href="https://www.jagcleaningservices.ca/pages/services/janitorial-services/special-event-cleaning-services-brooks-medicine-hat-ab">Special Event Cleaning<svg><use href="#i-arrow"/></svg></a></li>
+          <li><a href="https://www.jagcleaningservices.ca/pages/services/janitorial-services/wall-washing-cleaning-services-brooks-medicine-hat-ab">Wall Washing and Cleaning<svg><use href="#i-arrow"/></svg></a></li>
+          <li><a href="https://www.jagcleaningservices.ca/pages/services/janitorial-services/window-cleaning-services-brooks-medicine-hat-ab">Window Cleaning<svg><use href="#i-arrow"/></svg></a></li>
+        </ul>
+      </div>
+      <div class="solo rv">
+        <a href="https://www.jagcleaningservices.ca/pages/services/residential-cleaning" data-img="images/service-residential.jpg"><h3>Residential Cleaning</h3><span>View service</span></a>
+        <a href="https://www.jagcleaningservices.ca/pages/services/commercial-cleaning" data-img="images/service-commercial.jpg"><h3>Commercial Cleaning</h3><span>View service</span></a>
+        <a href="https://www.jagcleaningservices.ca/pages/services/auto-cleaning-detailing-services-brooks-medicine-hat-ab" data-img="images/service-auto.jpg"><h3>Auto Cleaning and Detailing</h3><span>View service</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="values">
+  <div class="wrap">
+    <div class="values-head rv">
+      <h2>What our clients count on, in their own words.</h2>
+    </div>
+
+    <div class="vrow rv">
+      <div class="vmedia"><img src="images/value-trust.jpg" alt="Smiling JAG cleaner with supplies" loading="lazy"></div>
+      <div class="vtext">
+        <h3>We value long-term relationships built on trust and quality</h3>
+        <p>At JAG Cleaning Services, we understand the importance of building lasting relationships with our clients. We prioritize your satisfaction and work diligently to meet your specific residential or commercial cleaning requirements. Our team is committed to delivering consistent, high-quality services that meet and exceed your expectations.</p>
+        <figure class="quote">
+          <h4>High-quality, responsive, and excellent value</h4>
+          <blockquote>“I am very happy with JAG cleaning services. I have had them come for a number of years. The house is always fresh and clean after they come. I love walking through the door to a clean house; it helps out so much. They are flexible with time and days if I have to reschedule and they get me in right away. I would 100% recommend their services.”</blockquote>
+          <cite>Elizabeth Knull</cite>
+        </figure>
+      </div>
+    </div>
+
+    <div class="vrow rv">
+      <div class="vmedia"><img src="images/value-adapt.jpg" alt="JAG team cleaning a commercial office" loading="lazy"></div>
+      <div class="vtext">
+        <h3>Adapting to your evolving cleaning needs</h3>
+        <p>Whether you require a one-time deep clean, regular maintenance, or customized cleaning solutions, we have you covered. Our flexible approach allows us to adapt our residential and commercial cleaning services to your evolving requirements, no matter the size or complexity of the job.</p>
+        <figure class="quote">
+          <h4>Adapt without an issue</h4>
+          <blockquote>“Jag Cleaners had been our cleaning vendors for over 7 years. Jerrell and her team take pride in their work and it shows. We have always found they provide excellent service and profile a professional image. Whenever we have made a change to our schedule or request additional cleaning like carpet cleaning, exterior window cleaning, they adapt without an issue. I would highly recommend JAG for your cleaning needs.”</blockquote>
+          <cite>Randy Patton<small>Associate Dealer, Canadian Tire 212</small></cite>
+        </figure>
+      </div>
+    </div>
+
+    <div class="vrow rv">
+      <div class="vmedia"><img src="images/value-experts.jpg" alt="JAG technician cleaning a floor by hand" loading="lazy"></div>
+      <div class="vtext">
+        <h3>Expert technicians for specialized cleaning services</h3>
+        <p>Our skilled experts are well-equipped to handle all aspects of your cleaning project. From carpet cleaning to floor care and post-construction cleaning, we have the knowledge and expertise to deliver exceptional results, so every surface is spotless.</p>
+        <figure class="quote long">
+          <h4>Punctual and professional</h4>
+          <blockquote>“As a busy working mom to three young children, finding time and energy to keep up with a clean house was exhausting. The ladies at JAG are amazing! Always punctual, professional, and efficient. My house is spotless and clean in no time at all<span class="dots">…</span><span class="more">. They never cut corners, and they clean every square inch to keep my house spotless and disinfected. The depth of cleaning is a total bargain for the service I receive and it is well worth the cost each month to know my home is sanitary and clean for my entire family. I can’t highly recommend this company enough! They have been a life saver for me for a couple of years now and I’m looking forward to many more!</span>”</blockquote>
+          <button class="read-more" aria-expanded="false">Read full review</button>
+          <cite>A. Hudec</cite>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COUPONS -->
+<section class="deals">
+  <div class="wrap">
+    <div class="deals-head rv">
+      <h2>Request your quote today &amp; experience the difference.</h2>
+      <p>Serving Alberta. Present the matching coupon when you book with JAG Cleaning Services Ltd.</p>
+    </div>
+    <div class="coupons">
+      <div class="coupon c-res rv">
+        <div class="pct"><strong>10<sup>%</sup><em>OFF</em></strong></div>
+        <div class="info"><h3>Residential cleaning</h3><p>When you present this coupon.</p><img src="images/logo-white.png" alt="" aria-hidden="true"></div>
+      </div>
+      <div class="coupon c-sen rv">
+        <div class="pct"><strong>20<sup>%</sup><em>OFF</em></strong></div>
+        <div class="info"><h3>Seniors discount</h3><p>When you present this coupon.</p><img src="images/logo-white.png" alt="" aria-hidden="true"></div>
+      </div>
+      <div class="coupon c-com rv">
+        <div class="pct"><strong>30<sup>%</sup><em>OFF</em></strong></div>
+        <div class="info"><h3>All commercial</h3><p>When you present this coupon.</p><img src="images/logo-white.png" alt="" aria-hidden="true"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GUIDE + FORM -->
+<section class="guide" id="inquiry">
+  <div class="wrap guide-grid">
+    <div class="guide-copy">
+      <h2 class="rv">Download the free cleaning guide.</h2>
+      <div class="book rv" aria-hidden="true">
+        <div class="book-cover">
+          <img src="images/logo-white.png" alt="">
+          <h3>The Ultimate Guide to Unlocking the Benefits of Hiring a Professional Cleaning Service</h3>
+          <small>JAG Cleaning Services Ltd.</small>
+        </div>
+      </div>
+      <p class="rv">Get “The Ultimate Guide to Unlocking the Benefits of Hiring a Professional Cleaning Service” now and unlock the secrets to a cleaner and healthier environment. Whether you require residential cleaning services in Brooks or commercial cleaning services in Lethbridge, understanding these advantages will help you make an informed decision about your cleaning requirements.</p>
+    </div>
+    <form class="form rv" action="https://www.jagcleaningservices.ca/pages/brooks-medicine-hat-residential-commercial-cleaning-company" method="get">
+      <h3>Quick inquiry form</h3>
+      <p>Send your details and the JAG team will get back to you.</p>
+      <div class="field"><label for="f-name">Name <span>*</span></label><input id="f-name" name="name" required autocomplete="name"></div>
+      <div class="row2">
+        <div class="field"><label for="f-email">Email address <span>*</span></label><input id="f-email" name="email" type="email" required autocomplete="email"></div>
+        <div class="field"><label for="f-phone">Phone <span>*</span></label><input id="f-phone" name="phone" type="tel" required autocomplete="tel"></div>
+      </div>
+      <div class="field"><label for="f-msg">Message</label><textarea id="f-msg" name="message"></textarea></div>
+      <button class="btn btn-red" type="submit">Send inquiry and get the guide</button>
+    </form>
+  </div>
+</section>
+
+<!-- SERVICE AREAS -->
+<section class="areas" id="areas">
+  <div class="wrap areas-grid">
+    <div class="map rv">
+      <svg viewBox="0 150 373 540" role="img" aria-label="Map of Alberta showing JAG branches in Edmonton, Calgary, Brooks, Medicine Hat and Lethbridge">
+        <path class="prov" d="M10.0,10.0 L362.7,10.0 L362.7,670.0 L219.1,670.0 L196.9,634.0 L193.4,592.0 L175.8,562.0 L144.0,526.0 L105.2,484.0 L70.0,442.0 L31.2,412.0 L10.0,382.0Z"/>
+        <g class="dot-g" data-b="edmonton"><circle class="ring" cx="239.6" cy="397" r="9"/><circle class="dot" cx="239.6" cy="397" r="8"/><text x="254" y="402">Edmonton</text></g>
+        <g class="dot-g" data-b="calgary"><circle class="ring" cx="221" cy="545" r="9"/><circle class="dot" cx="221" cy="545" r="8"/><text x="206" y="550" text-anchor="end">Calgary</text></g>
+        <g class="dot-g" data-b="brooks"><circle class="ring" cx="295.7" cy="576.4" r="9"/><circle class="dot" cx="295.7" cy="576.4" r="8"/><text x="276" y="558">Brooks</text></g>
+        <g class="dot-g" data-b="medicinehat"><circle class="ring" cx="338.7" cy="607.6" r="9"/><circle class="dot" cx="338.7" cy="607.6" r="8"/><text x="336" y="638" text-anchor="middle">Medicine Hat</text></g>
+        <g class="dot-g" data-b="lethbridge"><circle class="ring" cx="262.5" cy="628.6" r="9"/><circle class="dot" cx="262.5" cy="628.6" r="8"/><text x="250" y="662" text-anchor="middle">Lethbridge</text></g>
+      </svg>
+    </div>
+    <div class="areas-copy">
+      <h2 class="rv">Proudly serving communities across Alberta.</h2>
+      <p class="rv">JAG Cleaning Services Ltd. proudly serves Brooks, Medicine Hat, Lethbridge, Calgary, Airdrie, Strathmore, Edmonton, and surrounding communities throughout Southern and Northern Alberta.</p>
+      <ul class="branches">
+        <li data-b="calgary" class="rv"><h3>Calgary, Airdrie &amp; Strathmore</h3><address>702 15 St NW, Calgary</address><a class="tel" href="tel:403-363-9932">403-363-9932<small>Call &amp; text</small></a></li>
+        <li data-b="brooks" class="rv"><h3><a href="https://www.jagcleaningservices.ca/pages/service-areas/commercial-residential-cleaning-services-brooks-ab">Brooks</a></h3><address>311 Bay 8-9th St. East, Brooks T1R 1C6</address><a class="tel" href="tel:403-363-9932">403-363-9932<small>Call &amp; text</small></a></li>
+        <li data-b="medicinehat" class="rv"><h3><a href="https://www.jagcleaningservices.ca/pages/service-areas/commercial-residential-cleaning-services-medicine-hat-ab">Medicine Hat</a></h3><address>104-1235 Southview Drive SE, Medicine Hat, AB T1B 4K3<br>650 13 St SE, Medicine Hat, AB T1A 1X3</address><a class="tel" href="tel:403-528-1041">403-528-1041<small>Call &amp; text</small></a></li>
+        <li data-b="lethbridge" class="rv"><h3><a href="https://www.jagcleaningservices.ca/pages/service-areas/commercial-residential-cleaning-services-lethbridge-ab">Lethbridge</a></h3><address>2416 10 Avenue S, Lethbridge AB T1K 0C2</address><a class="tel" href="tel:403-360-7116">403-360-7116<small>Call &amp; text</small></a></li>
+        <li data-b="edmonton" class="rv"><h3><a href="https://www.jagcleaningservices.ca/pages/service-areas/commercial-residential-cleaning-services-edmonton">Edmonton</a></h3><address>15715 83 St NW, Edmonton T5Z 2P6</address><a class="tel" href="tel:780-953-9932">780-953-9932<small>Call &amp; text</small></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- RECOGNITION -->
+<section class="trust">
+  <div class="wrap">
+    <div class="rv">
+      <h2>Recognized for outstanding service.</h2>
+      <p>Verified by the Canadian Business Review Board as one of the best cleaning services in Alberta, and a BBB Accredited Business with an A+ rating.</p>
+    </div>
+    <div class="badges rv">
+      <img src="images/cbrb-seal.jpg" alt="2023 CBRB Verified seal for JAG Cleaning Services Ltd., Alberta" loading="lazy">
+      <img class="cert" src="images/cbrb-certificate.jpg" alt="2023 CBRB certificate: Cleaning Services in Alberta, verification presented to JAG Cleaning Services Ltd" loading="lazy">
+      <img src="images/bbb-accredited.jpg" alt="BBB Accredited Business, rating A+" loading="lazy" style="height:90px">
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="news">
+  <div class="wrap">
+    <div class="rv">
+      <h2>Subscribe to our newsletter.</h2>
+      <p>Gain access to exclusive promotions, valuable cleaning tips, and strategies tailored to your needs. Stay updated with JAG Cleaning Services in Brooks, Medicine Hat, Lethbridge, Edmonton, and surrounding Alberta areas.</p>
+    </div>
+    <a class="btn rv" href="https://www.jagcleaningservices.ca/?fuseaction=member.registerShort">Subscribe</a>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img src="images/logo-white.png" alt="JAG Cleaning Services Ltd.">
+        <p>Professional commercial and residential cleaning services across Alberta. Your property is our priority, and your satisfaction is our commitment.</p>
+        <div class="social">
+          <a href="https://www.facebook.com/jagcleaningservices.ca/" aria-label="JAG Cleaning Services on Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.2H7.8v3h2.6V21z"/></svg></a>
+          <a href="https://ca.linkedin.com/in/jerrell-pangilinan-740008a4" aria-label="JAG Cleaning Services on LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M6.9 8.8H3.6V20h3.3zM5.2 3.6a1.9 1.9 0 1 0 0 3.8 1.9 1.9 0 0 0 0-3.8zM20.4 13.8c0-3-1.6-5.2-4.4-5.2-1.6 0-2.6.8-3 1.6V8.8H9.8V20h3.3v-5.5c0-1.5.3-2.9 2.1-2.9s1.9 1.7 1.9 3V20h3.3z"/></svg></a>
+        </div>
+        <img class="foot-bbb" src="images/bbb-accredited.jpg" alt="BBB Accredited Business, rating A+" loading="lazy">
+      </div>
+      <div>
+        <h4>Links</h4>
+        <ul>
+          <li><a href="https://www.jagcleaningservices.ca/pages/home">Home</a></li>
+          <li><a href="https://www.jagcleaningservices.ca/pages/about-cleaning-company-brooks-medicine-hat">About Us</a></li>
+          <li><a href="https://www.jagcleaningservices.ca/pages/services">Services</a></li>
+          <li><a href="https://www.jagcleaningservices.ca/pages/service-areas">Service Areas</a></li>
+          <li><a href="https://www.jagcleaningservices.ca/pages/gallery/before-we-clean">Before We Clean</a></li>
+          <li><a href="https://www.jagcleaningservices.ca/pages/gallery/after-we-clean">After We Clean</a></li>
+          <li><a href="https://www.jagcleaningservices.ca/pages/gallery/equipment-and-vehicles">Equipment &amp; Vehicles</a></li>
+          <li><a href="https://www.jagcleaningservices.ca/pages/brooks-medicine-hat-cleaning-company-testimonials">Testimonials</a></li>
+          <li><a href="https://www.jagcleaningservices.ca/blogs/cleaning-company-blog">Blog</a></li>
+          <li><a href="https://www.jagcleaningservices.ca/pages/brooks-medicine-hat-residential-commercial-cleaning-company">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit us</h4>
+        <ul>
+          <li>702 15 St NW, Calgary</li>
+          <li>311 Bay 8-9th St. East, Brooks T1R 1C6</li>
+          <li>104-1235 Southview Drive SE, Medicine Hat, AB T1B 4K3</li>
+          <li>650 13 St SE, Medicine Hat, AB T1A 1X3</li>
+          <li>2416 10 Avenue S, Lethbridge AB T1K 0C2</li>
+          <li>15715 83 St NW, Edmonton T5Z 2P6</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Call &amp; text</h4>
+        <ul class="foot-phones">
+          <li><a href="tel:403-363-9932">Calgary, Airdrie &amp; Strathmore</a><b>403-363-9932</b></li>
+          <li><a href="tel:403-363-9932">Brooks</a><b>403-363-9932</b></li>
+          <li><a href="tel:403-528-1041">Medicine Hat</a><b>403-528-1041</b></li>
+          <li><a href="tel:403-360-7116">Lethbridge</a><b>403-360-7116</b></li>
+          <li><a href="tel:780-953-9932">Edmonton</a><b>780-953-9932</b></li>
+        </ul>
+        <div class="foot-mail">
+          <a href="mailto:info@jagcleaningservices.ca">info@jagcleaningservices.ca</a>
+          <a href="mailto:jerrell@jagcleaningservices.ca">jerrell@jagcleaningservices.ca</a>
+        </div>
+      </div>
+    </div>
+    <img class="foot-swoosh" src="images/swoosh-white.png" alt="" aria-hidden="true">
+    <div class="foot-bottom">
+      <span>Copyright © <span id="yr">2026</span> JAG Cleaning Services Ltd. All rights reserved.</span>
+      <span>Design by <a href="https://cleaningdigital.ca/" target="_blank" rel="noopener">Cleaning Digital</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:403-363-9932"><svg><use href="#i-phone"/></svg>Call</a>
+  <a href="https://www.jagcleaningservices.ca/pages/brooks-medicine-hat-residential-commercial-cleaning-company">Get in touch</a>
+</div>
+
+<script>
+(function(){
+  document.getElementById('yr').textContent=new Date().getFullYear();
+
+  /* branch picker */
+  var tel=document.getElementById('branchTel'),btn=document.getElementById('branchBtn'),nm=document.getElementById('branchName');
+  document.querySelectorAll('input[name=city]').forEach(function(r){
+    r.addEventListener('change',function(){
+      var p=r.value.split('|');tel.textContent=p[0];tel.href='tel:'+p[0];btn.href='tel:'+p[0];nm.textContent=p[1]+' branch';
+    });
+  });
+
+  /* drawer */
+  var drawer=document.getElementById('drawer'),burger=document.querySelector('.burger');
+  function setDrawer(o){drawer.classList.toggle('open',o);drawer.setAttribute('aria-hidden',!o);burger.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':'';}
+  burger.addEventListener('click',function(){setDrawer(true)});
+  drawer.querySelector('.drawer-close').addEventListener('click',function(){setDrawer(false)});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')setDrawer(false)});
+
+  /* reveal + checklist */
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.rv,.checks').forEach(function(el){io.observe(el)});
+
+  /* bubbles */
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,bw=document.querySelector('.bubbles');
+  if(!reduce){for(var i=0;i<14;i++){var b=document.createElement('b'),s=10+Math.random()*46;b.style.width=b.style.height=s+'px';b.style.left=(Math.random()*100)+'%';b.style.animationDuration=(14+Math.random()*16)+'s';b.style.animationDelay=(-Math.random()*20)+'s';b.style.setProperty('--dx',(Math.random()*80-40)+'px');bw.appendChild(b);}}
+
+  /* review expand */
+  document.querySelectorAll('.read-more').forEach(function(b){b.addEventListener('click',function(){var q=b.closest('.quote'),o=q.classList.toggle('open');b.setAttribute('aria-expanded',o);b.textContent=o?'Show less':'Read full review';})});
+
+  /* services photo swap */
+  var img=document.getElementById('svcImg');
+  document.querySelectorAll('.svc [data-img]').forEach(function(el){el.addEventListener('mouseenter',function(){if(img.getAttribute('src')!==el.dataset.img){img.style.opacity=0;setTimeout(function(){img.src=el.dataset.img;img.style.opacity=1},200)}})});
+
+  /* map <-> branch list */
+  function hot(k,on){document.querySelectorAll('[data-b="'+k+'"]').forEach(function(el){el.classList.toggle('hot',on)})}
+  document.querySelectorAll('[data-b]').forEach(function(el){var k=el.dataset.b;el.addEventListener('mouseenter',function(){hot(k,true)});el.addEventListener('mouseleave',function(){hot(k,false)})});
+})();
+</script>
+</body>
+</html>
